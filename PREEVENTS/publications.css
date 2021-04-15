@@ -1,0 +1,57 @@
+/* Set style across the entire body. */
+body {
+    background-color: rgb(164, 216, 248);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow: scroll;
+    margin: 10px;
+    width: auto; /* Keeps the margins within the document (no scrolling from left to right). */
+    display: inline-block; /* Keeps the entire body centered in the mobile view. */
+}
+
+/* Set style on intro (header of the home page). */
+.intro {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+
+/* Set style on the menu bar. */
+.menu {
+    background-color: grey;
+    overflow: hidden;
+    text-align: center;
+    align-self: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+/* Set style on the menu buttons. */
+.menu a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    align-self: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+/* Set style on the menu button hover. */
+.menu a:hover {
+    background-color: #f2f2f2;
+    color: grey;
+}
+
+/* Set style on the reading section. */
+.mainReadingSection {
+    size: 500px;
+    overflow: hidden;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: white;
+    text-align: left;
+    font-size: 20px;
+    display: inline-block; /* Contains the float inside the div. */
+}
