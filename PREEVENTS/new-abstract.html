@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+
+  <!--Adds the style sheet to the .html file.-->
+  <link rel="stylesheet" href="new-abstract.css">
+
+  <!--The two links below allow Google Fonts to be added to the website.-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+  <!--The two links below imports the jQuery.-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!--Imports the jQuery script for this page.-->
+  <script src="new-abstract-script.js"></script>
+
+  <head>
+    <!--Set the name of the tab.-->
+    <title>Abstract</title>
+
+    <!--Set the favicon.-->
+    <link rel="icon", href="https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/NSF_logo.png?raw=true">
+  </head>
+
+  <!--Sets the background for the website. See the CSS file for the information.-->
+  <div class="background"></div> 
+
+  <!--Creates the sidebar menu.-->
+  <div id="mySidenav" class="sidenav">
+
+    <!--Adds the functionality to close the menu when 'x' is pressed.-->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+
+    <!--Adds the buttons with their href to the menu.-->
+    <a href="new-abstract.html">Abstract</a>
+    <a href="#">Collaborators</a>
+    <a href="new-publications.html">Publications</a>
+    <a href="#">Talks</a>
+    <a href="#">Visualizations</a>
+  </div>
+  
+  <!--Assigns the button with the openMenu function.-->
+  <span class="sidenavButton", onclick="openMenu()">&#10095; Menu</span>
+
+  <!--Creates the container for holding the main text of the website.-->
+  <div class="container">
+        <body>
+            <!--Creates a class to edit all the text within one class.-->
+            <div class="text">
+                <h1 id="titleHeading" style="text-align: center;">Abstract</h1>
+
+                <!--Adds the image. Link may be changed so that it's hosted from Github.-->
+                <figure id="abstractImage">
+                    <img title="FireVortexUSDAFireLab", 
+                    src="C:\Users\Eric\Desktop\PREEVENTS\UtahEFD.github.io\PREEVENTS\Images\FireVortexUSDAFireLab.jpg", 
+                    width="350" height="450">
+                    <figcaption><em>Captured from the University of Utah.</em></figcaption>
+                </figure>
+
+                <br>
+
+                <!--Creates the text for the abstract.-->
+                <p>Wildfires are increasingly common throughout the US and have significant impacts on populated areas. 
+                    Current rapid-response management is based on empirical or semi-empirical models developed more than 40 years ago. 
+                    The focus of this project is to create a Multistage Wildfire Research and Prediction System (MWRPS) that links several existing community, 
+                    open source models developed. This new model has the potential to change how fire is studied, and significantly improve operational 
+                    wildfire and smoke forecasting. MWRPS will serve as tool for fire professionals, urban and environmental planners, and disaster managers 
+                    who need to determine the societal and ecological impacts of wildfire and smoke. As a community model, MWRPS will be available to the 
+                    public to examine a variety of hazard-related issues. In addition to graduate student and postdoctoral training, the project includes a 
+                    plan for K-12 outreach through the Hi-GEAR program.</p>
+
+                <br>
+
+                <p>Sudden changes in flow at the fire line are crucial to extreme fire behavior and associated hazards. Because flow at the fire line 
+                    can significantly impact fire spread and subsequently all wildfire behavior, prediction and simulation of coupled atmosphere-fire 
+                    flow must be accurate from synoptic down to fire line scales. Accurate prediction requires the ability to model rapid synoptically-driven 
+                    changes in local winds, realistically render flow in complex terrain, and capture the impacts of the fire itself on local weather. 
+                    To meet this challenge, the Multistage Wildfire Research and Prediction System (MWRPS), a multi-scale model, 3D model will be developed 
+                    based on fundamental fluid dynamical principles. MWRPS will have the ability to resolve buildings, trees, and land cover, to incorporate 
+                    the effects of complex terrain, different vegetation types and geometries, to disperse smoke, and to represent radiation, sensible, and 
+                    latent heating in the wildfire environment. </p>
+
+                <br>
+                    
+                <p>Predicted wildfire properties from this model will include high resolution temporal and 
+                    spatial evolution of the fire perimeter and intensity; behavior for both surface and crown fires; smoke production and dispersion in 
+                    the Wildland Urban Interface (WUI) or through tree canopies (crucial for planning a proposed prescribed burn); and impacts of smoke 
+                    concentrations and of heat flux in safety zones and on WUI structures. In addition to the model development, three aspects of 
+                    extreme wildfire behavior will be addressed: the roles of (1) fuel heterogeneity, (2) complex topography, and (3) fire interactions. 
+                    A data-driven system will be developed for atmosphere-fire models to steer simulations from a multitude of sources including: 
+                    weather data, sensors, airborne fire images, and satellite remote sensing in a statistically sound manner.</p>
+
+                <br>
+
+                <!--Includes a link at the end to refer to the award information on NSF.-->
+                <p style="text-align: center;"><em><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1664175&HistoricalAwards=false" 
+                    target="_blank" style="color: white;">More information about the award can be found here.</a></em></p>
+            </div>
+        </body>
+  </div>
+
+</html>
+
+<!--Author: Eric Nieters - niete018@d.umn.edu-->
