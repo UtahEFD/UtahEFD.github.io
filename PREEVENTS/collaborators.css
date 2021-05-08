@@ -1,0 +1,92 @@
+/* Sets the background properties for the body of the website. */
+body {
+	background-color: #303030;
+}
+
+/* Formats the container that contains all of the elements on the screen. */
+.container {
+	color: #FFF;                            /* Makes the text white */
+	font-family: 'Playfair Display', serif;   /* Sets the font of the text. */
+	margin-left: auto;                        /* Prevents skew to the left. */
+	margin-right: auto;                       /* Prevents skew to the right. */
+	max-width: 1200px;                        /* Sets a max width so that it doesn't stretch over large displays. */
+	text-shadow: 2px 2px 8px #000;          /* Adds a shadow on the text for better contrast. */
+	display: flex;                            /* Fixes the display format for mobile viewers with narrow displays. */
+	flex-direction: column;                   /* Fixes the display format for mobile viewers with narrow displays. */
+	align-items: center;                      /* Aligns the items in the center for smaller displays. */
+	padding: 30px;                            /* Pads all directions for better formatting. */
+	padding-top: 5px;                        /* Adds additional padding towards the top to prevent the navigation button from overflow. */
+	opacity: 0;                               /* Sets the initial opacity to 0 to enable fading-in upon loading. */
+}
+
+/* Formats the header image at the top of the page. */
+.headerImage img {
+	object-fit: cover;			/* Keeps the aspect ratio of the image when stretched. */
+	width: 100%;				/* Makes the image take up the entire width of the display. */
+	height: 250px;				/* Sets the max height for the header photo. */
+}
+
+/* Formats the navigation button and drawer. */
+.sidenav {
+	height: 100%;                 /* Makes the navigation menu take up the whole page when clicked. */
+	width: 0;                     /* Hides the navigation bar for when it's not clicked. */
+	position: fixed;              /* Positions the navigation bar so it's not off-screen. */
+	z-index: 1;                   /* Hides the menu button when the navigation drawer is inflated. */
+	top: 0;                       /* Removes all padding on the top when clicked. */
+	left: 0;                      /* Removes all padding on the left when clicked. */
+	background-color: #111;     /* Colors the background of the menu to black. */
+	overflow-x: hidden;           /* Prevent scrolling in the x-direction when clicked. */
+	transition: 0.5s;             /* Turns the transition for the animation into half a second. */
+	padding-top: 60px;            /* Pads the buttons on the top of the navigation bar. */
+	text-align: center;           /* Aligns all of the buttons towards the center of the screen. */
+}
+
+/* Formats the buttons for the navigation menu. */
+.sidenavButton {
+	font-size: 45px;                    /* Sizes the navigation button. */
+	cursor: pointer;                    /* Indicates to the user that the navigation button is clickable. */
+	color: white;                     /* Makes the navigation button/text white. */
+	text-shadow: 2px 2px 8px #000;    /* Adds shadow to the navigation button for better contrast. */
+	position: absolute;                 /* Keeps the navigation button from shifting the text in the center. */
+	padding-left: 15px;					/* Pads the left of the navigation button to make it look cleaner. */
+}
+
+/* Formats the buttons on the menu. */
+.sidenav a {
+	padding: 8px 8px 8px 32px;          /* Adds padding to all of the buttons. */
+	text-decoration: none;              /* Removes the hyperlink underline for each button. */
+	font-size: 40px;                    /* Sizes the navigation buttons. */
+	color: #818181;                   /* Sets the color of the buttons. */
+	display: block;                     /* Sets the buttons so that they are vertical instead of horizontal. */
+}
+
+/* Changes the color of the button when the cursor is hovering over it. */
+.sidenav a:hover{
+	color: #f1f1f1;           /* Turns the buttons white when the cursor hovers over it. */
+}
+
+/* Formats the "close button" when the menu is open. */
+.sidenav .closebtn {
+	position: absolute;         /* Positions the close button for the navigation menu. */
+	top: 0;                     /* Makes the close button positioned directly at the top. */
+	right: 25px;                /* Makes the close button positioned 25px from the right. */
+	font-size: 36px;            /* Changes the size of the close button. */  
+}
+
+/* Formats the text in the center of the webpage. */
+.text {
+	background: rgba(0, 0, 0, 0.4);         /* Creates a faded background behind the text for readability. */
+	padding: 30px;                            /* Pads the text within the container. */
+	font-size: 25px;                          /* Changes the font's size. */
+	overflow-wrap: break-word;                /* Prevents overflow. */
+	width: 100%;                              /* Fixes the padding of the background for mobile users. */
+}
+
+/* Formats the image so that it fits on mobile devices. */
+.container .text #abstractImage {
+	margin: auto;           /* Scales the image in the center of the container for narrow displays. */
+	overflow: hidden;       /* Prevents scrolling if the image is too large. */
+}
+
+/* Author: Eric Nieters - niete018@d.umn.edu */
+/* Menu resource from: https://www.w3schools.com/howto/howto_js_sidenav.asp */
