@@ -1,10 +1,6 @@
 /* Sets the background properties for the body of the website. */
 body {
-	background-repeat: no-repeat;               /* Prevents the background from checkering if the display is too big. */
-	background-position: center center;         /* Positions the background image directly in the center (not at the upper-left corner by default). */
-	background-size: cover;                     /* Scales the background image for scrolling. */
-  /* The linear-gradient attribute below darkens the background image. */
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/University-of-Utah-Campus.jpg?raw=true');
+	background-color: #303030;
 }
 
 /* Formats the container that contains all of the elements on the screen. */
@@ -20,8 +16,15 @@ body {
 	flex-direction: column;                   /* Fixes the display format for mobile viewers with narrow displays. */
 	align-items: center;                      /* Aligns the items in the center for smaller displays. */
 	padding: 30px;                            /* Pads all directions for better formatting. */
-	padding-top: 70px;                        /* Adds additional padding towards the top to prevent the navigation button from overflow. */
+	padding-top: 5px;                        /* Adds additional padding towards the top to prevent the navigation button from overflow. */
 	opacity: 0;                               /* Sets the initial opacity to 0 to enable fading-in upon loading. */
+}
+
+/* Formats the header image at the top of the page. */
+.headerImage img {
+	object-fit: cover;			/* Keeps the aspect ratio of the image when stretched. */
+	width: 100%;				/* Makes the image take up the entire width of the display. */
+	height: 250px;				/* Sets the max height for the header photo. */
 }
 
 /* Formats the navigation button and drawer. */
@@ -46,6 +49,7 @@ body {
 	color: white;                     /* Makes the navigation button/text white. */
 	text-shadow: 2px 2px 8px #000;    /* Adds shadow to the navigation button for better contrast. */
 	position: absolute;                 /* Keeps the navigation button from shifting the text in the center. */
+	padding-left: 15px;					/* Pads the left of the navigation button to make it look cleaner. */
 }
 
 /* Formats the buttons on the menu. */
