@@ -1,4 +1,3 @@
-- Create buttons and remove menu on the home screen.
 - Optimize the home screen for mobile viewers.
 - Create templates for the last two pages (talks and visuals).
   - These pages may be removed or changed to something else later.
@@ -10,3 +9,4 @@
 - Set gallery slideshow for the photos on the header and home page.
   - Will need images before I can do this. If I get caught-up, I will use placeholders.
 - Tidy up the publications.
+- Check if the collaborators page needs formatting.
