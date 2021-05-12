@@ -24,24 +24,48 @@
   <!--Sets the background for the website. See the CSS file for the information.-->
   <div class="background"></div> 
 
-  <!--Creates the sidebar menu.-->
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
-    <a href="abstract.html">Abstract</a>
-    <a href="collaborators.html">Collaborators</a>
-    <a href="publications.html">Publications</a>
-    <a href="#">Talks</a>
-    <a href="#">Visualizations</a>
-  </div>
-  
-  <!--Assigns the button with the openMenu function.-->
-  <span class="sidenavButton", onclick="openMenu()">&#10095; Menu</span>
-
+  <!--Creates the container where all of the information is stored in.-->
   <div class="container">
+    <!--Creates the text for the home screen.-->
     <h1 id="preeventsTitle", style="font-size: 65px; opacity: 0;">PREEVENTS Track 2: A fast-response wildland fire modeling framework for prediction and risk assessment</h1>
     <em id="researchSupported", style="font-size: 40px; opacity: 0;">A Research Supported by the National Science Foundation - PREEVENTS 1664175</em>
     <br><br>
     <em id="conductedBy", style="font-size: 40px; opacity: 0;">Conducted by the University of Utah with collaboration of the University of Minnesota Duluth and the University of Colorado Denver</em>
+    
+    <!--Creates the first div that contains the top three buttons.-->
+    <div class="buttonsRowOne" style="padding-top: 40px;">
+
+      <!--Creates the abstract button and assigns it to a hyperlink.-->
+      <div class="abstractButton" onclick="location.href='abstract.html';">
+        <p>Abstract</p>
+      </div>
+  
+      <!--Creates the collaborators button and assigns it to a hyperlink.-->
+      <div class="collaboratorsButton" onclick="location.href='collaborators.html';">
+        <p>Collaborators</p>
+      </div>
+
+      <!--Creates the publications button and assigns it to a hyperlink.-->
+      <div class="publicationsButton" onclick="location.href='publications.html';">
+        <p>Publications</p>
+      </div>      
+
+    </div>
+
+    <!--Creates the second div that contains the two bottom buttons.-->
+    <div class="buttonsRowTwo">
+
+      <!--Creates the talks button (hyperlink coming soon).-->
+      <div class="talksButton">
+        <p>Talks</p>
+      </div>
+
+      <!--Creates the visualizations button (hyperlink coming soon).-->
+      <div class="visualizationsButton">
+        <p>Visualizations</p>
+      </div>
+
+    </div>
   </div>
 
 </html>

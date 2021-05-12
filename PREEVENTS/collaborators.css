@@ -15,7 +15,7 @@ body {
 	flex-direction: column;                   /* Fixes the display format for mobile viewers with narrow displays. */
 	align-items: center;                      /* Aligns the items in the center for smaller displays. */
 	padding: 30px;                            /* Pads all directions for better formatting. */
-	padding-top: 5px;                        /* Adds additional padding towards the top to prevent the navigation button from overflow. */
+	padding-top: 5px;                         /* Adds additional padding towards the top to prevent the navigation button from overflow. */
 	opacity: 0;                               /* Sets the initial opacity to 0 to enable fading-in upon loading. */
 }
 

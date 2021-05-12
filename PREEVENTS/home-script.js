@@ -1,14 +1,13 @@
-// Fades the intro text in.
 $(document).ready(function() {
-    $(".container, #preeventsTitle").animate({opacity: 1}, 2000);
-    $(".container, #researchSupported").delay(2200).animate({opacity: 1}, 2000);
-    $(".container, #conductedBy").delay(4400).animate({opacity: 1}, 2000);
-});
+  // Fades the intro text in.
+  $(".container, #preeventsTitle").animate({opacity: 1}, 1500);
+  $(".container, #researchSupported").delay(400).animate({opacity: 1}, 1500);
+  $(".container, #conductedBy").delay(800).animate({opacity: 1}, 1500);
 
-function openMenu() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
-  
-function closeMenu() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+  // Fades the buttons in.
+  $(".container, .buttonsRowOne, .abstractButton").delay(2300).animate({opacity: 1}, 200);
+  $(".container, .buttonsRowOne, .collaboratorsButton").delay(2500).animate({opacity: 1}, 200);
+  $(".container, .buttonsRowOne, .publicationsButton").delay(2700).animate({opacity: 1}, 200);
+  $(".container, .buttonsRowOne, .talksButton").delay(2900).animate({opacity: 1}, 200);
+  $(".container, .buttonsRowOne, .visualizationsButton").delay(3100).animate({opacity: 1}, 200);
+});
