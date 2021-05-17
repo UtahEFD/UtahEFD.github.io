@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $(".background").animate({opacity: 1});
   // Fades the intro text in.
   $(".container, #preeventsTitle").animate({opacity: 1}, 1500);
   $(".container, #researchSupported").delay(400).animate({opacity: 1}, 1500);

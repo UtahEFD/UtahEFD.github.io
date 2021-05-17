@@ -43,10 +43,10 @@ body {
 
 /* Formats the buttons for the navigation menu. */
 .sidenavButton {
-	font-size: 45px;                    /* Sizes the navigation button. */
+	font-size: 55px;                    /* Sizes the navigation button. */
 	cursor: pointer;                    /* Indicates to the user that the navigation button is clickable. */
 	color: white;                     /* Makes the navigation button/text white. */
-	text-shadow: 2px 2px 8px #000;    /* Adds shadow to the navigation button for better contrast. */
+	text-shadow: 2px 2px 10px #000;    /* Adds shadow to the navigation button for better contrast. */
 	position: absolute;                 /* Keeps the navigation button from shifting the text in the center. */
 	padding-left: 15px;					/* Pads the left of the navigation button to make it look cleaner. */
 }

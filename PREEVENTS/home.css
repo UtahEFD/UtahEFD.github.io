@@ -24,13 +24,6 @@ body {
   min-height: 100vh;                            /* Makes the height of the container fill the screen. */
 }
 
-/* Formats the buttons' positioning. */
-.buttonsRowOne, .buttonsRowTwo {
-	padding: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
 /* Formats the buttons. */
 .abstractButton, 
 .collaboratorsButton, 
