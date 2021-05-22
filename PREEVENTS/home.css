@@ -3,8 +3,6 @@ body {
   background-repeat: no-repeat;               /* Prevents the background from checkering if the display is too big. */
   background-position: center center;         /* Positions the background image directly in the center (not at the upper-left corner by default). */
   background-size: cover;                     /* Scales the background image for scrolling. */
-  /* The linear-gradient attribute below darkens the background image. */
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/University-of-Utah-Campus.jpg?raw=true');
 }
 
 /* Formats the container that contains all of the elements on the screen. */
