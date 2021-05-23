@@ -1,5 +1,5 @@
-var imageURLs = ['https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/University-of-MN-Duluth-Campus-min.jpg?raw=true',
-'https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/University-of-Utah-Campus-min.jpg?raw=true'];
+var imageURLs = ['https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/University-of-MN-Duluth-Campus-min-min.jpg?raw=true',
+'https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/University-of-Utah-Campus-min-min.jpg?raw=true'];
 
 var index = 0;
 
