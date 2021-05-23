@@ -1,7 +1,7 @@
 function cycleBackgroundImages() {
   $.backstretch([
-    "https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/University-of-MN-Duluth-Campus-min-min.jpg?raw=true",
-    "https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/University-of-Utah-Campus-min-min.jpg?raw=true",
+    "https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/UMDDuluthCampus-Background.jpg?raw=true",
+    "https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/UUtahCampus-Background.jpg?raw=true",
     ], {
       fade: 750,
       duration: 3000
