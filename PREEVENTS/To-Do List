@@ -3,4 +3,35 @@
 - Update the header photo to display the title.
 - Set placeholders that link to the Github repo.
   - This consists of adding buttons to the home screen that link to PREEVENTS, QES Winds, Utah LSM, etc.
-- Check if the collaborators page needs formatting.
+- Add/Remove the relevant names in collaborators.
+  - Adam Kochanski
+  - Behnam Bozorgmehr
+  - Eric Nieters
+  - Angel Farguell
+  - Fabien Margairaz
+  - Emily Hansson (hanss016)
+  - Jacob McCormick
+  - Jan Mandel (janmandel)
+  - Jeremy Gibbs
+  - Loren Atwood (latwood)
+  - Lexi DeFord (LDeFord4 )
+  - Lucas Ulmer (lucasulmer
+  - Matthew Moody (moodymjm) - Role:
+  - Eric Paradyjak (pardyjak) 
+  - Zach Patterson (pattersonz)
+  - Rob Stoll (rstoll2
+  - Derek Mallia (tartanrunner25
+  - Pete Willemsen (willemsn)
+  
+- Create a static, general page for Github repos (links to UtahEFD.github.io).
+  - UtahEFD
+  - UtahLSM
+  - PREEVENTS (links to this website).
+  - LEMSv2
+  
+- Create "back to home" button.
+- Highlight the title on the publication page. Easy to read. Don't make it centered.
+  - Place it at the top of each citation, then make the other content smaller (such as authors, dates, etc).
+  - Change the "Citation Details" to "Link to External Citation".
+  
+- Fix the menu to make it cleaner.
