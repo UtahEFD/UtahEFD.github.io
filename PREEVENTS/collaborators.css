@@ -42,13 +42,23 @@ body {
 }
 
 /* Formats the buttons for the navigation menu. */
-.sidenavButton {
+.fa-chevron-circle-down {
 	font-size: 55px;                    /* Sizes the navigation button. */
 	cursor: pointer;                    /* Indicates to the user that the navigation button is clickable. */
 	color: white;                     /* Makes the navigation button/text white. */
 	text-shadow: 2px 2px 10px #000;    /* Adds shadow to the navigation button for better contrast. */
 	position: absolute;                 /* Keeps the navigation button from shifting the text in the center. */
-	padding-left: 15px;					/* Pads the left of the navigation button to make it look cleaner. */
+	padding: 15px;					/* Pads the left of the navigation button to make it look cleaner. */
+}
+
+.homeButton .fa-home {
+	font-size: 55px;                    /* Sizes the home button. */
+	cursor: pointer;                    /* Indicates to the user that the home button is clickable. */
+	color: white;                     /* Makes the home button/text white. */
+	text-shadow: 2px 2px 10px #000;    /* Adds shadow to the home button for better contrast. */
+	position: absolute;                 /* Keeps the home button from shifting the text in the center. */
+	padding: 15px;					/* Pads the left of the home button to make it look cleaner. */
+	margin-left: 70px;
 }
 
 /* Formats the buttons on the menu. */

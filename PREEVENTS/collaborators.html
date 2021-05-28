@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 
+  <!--The link below imports the icons used for the menu bar and the home button.-->
+  <script src="https://kit.fontawesome.com/32942563be.js" crossorigin="anonymous"></script>
+
   <!--The two links below imports the jQuery.-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -37,9 +40,14 @@
     <a href="#">Talks</a>
     <a href="#">Visualizations</a>
   </div>
-  
+
   <!--Assigns the button with the openMenu function.-->
-  <span class="sidenavButton", onclick="openMenu()">&#10095;</span>
+  <i class="fas fa-chevron-circle-down fa-rotate-270", onclick="openMenu()"></i>
+
+  <!--Assigns the button with the goHome function.-->
+  <div class="homeButton", onclick="location.href='home.html';">
+    <i class="fas fa-home"></i>
+  </div>
 
   <!--Creates the header image at the top of the screen.-->
   <div class="headerImage">
