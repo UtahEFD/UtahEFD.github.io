@@ -1,8 +1,6 @@
 - Create templates for the last two pages (talks and visuals).
   - These pages may be removed or changed to something else later.
 - Update the header photo to display the title.
-- Set placeholders that link to the Github repo.
-  - This consists of adding buttons to the home screen that link to PREEVENTS, QES Winds, Utah LSM, etc.
   
 - Create a static, general page for Github repos (links to UtahEFD.github.io).
   - UtahEFD
@@ -10,7 +8,6 @@
   - PREEVENTS (links to this website).
   - LEMSv2
   
-- Create "back to home" button.
 - Highlight the title on the publication page. Easy to read. Don't make it centered.
   - Place it at the top of each citation, then make the other content smaller (such as authors, dates, etc).
   - Change the "Citation Details" to "Link to External Citation".
