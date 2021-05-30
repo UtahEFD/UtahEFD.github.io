@@ -5,7 +5,7 @@ body {
 
 /* Formats the container that contains all of the elements on the screen. */
 .container {
-	color: #FFF;                            /* Makes the text white */
+	color: #FFF;                            /* Makes the text white. */
 	font-family: 'Playfair Display', serif;   /* Sets the font of the text. */
 	margin-left: auto;                        /* Prevents skew to the left. */
 	margin-right: auto;                       /* Prevents skew to the right. */

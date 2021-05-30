@@ -1,0 +1,19 @@
+body {
+    background-color: darkgray;
+}
+
+/* Formats the container that contains all of the elements on the screen. */
+.container {
+    color: black;                                 /* Makes the text black. */
+	font-family: 'PT Sans Narrow', sans-serif;      /* Sets the font of the text. */
+	margin-left: auto;                              /* Prevents skew to the left. */
+	margin-right: auto;                             /* Prevents skew to the right. */
+	max-width: 1200px;                              /* Sets a max width so that it doesn't stretch over large displays. */
+	text-align: center;                             /* Aligns all the text within the container. */
+	display: flex;                                  /* Fixes the display format for mobile viewers with narrow displays. */
+	flex-direction: column;                         /* Fixes the display format for mobile viewers with narrow displays. */
+	align-items: center;                            /* Aligns the items in the center for smaller displays. */
+	padding: 30px;                                  /* Pads all directions for better formatting. */
+	padding-top: 5px;                               /* Adds additional padding towards the top to prevent the navigation button from overflow. */
+    background-color: white;
+}

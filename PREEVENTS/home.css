@@ -8,7 +8,7 @@ body {
 /* Formats the container that contains all of the elements on the screen. */
 .container {
   align-items: center;                          /* Aligns the items in the center for smaller displays. */
-  color: #FFF;                                /* Makes the text white */
+  color: #FFF;                                /* Makes the text white. */
   font-family: 'Playfair Display', serif;       /* Sets the font of the text. */
   justify-content: center;                      /* Sets the font at the center of the screen. */
   margin-left: auto;                            /* Prevents skew to the left. */
@@ -28,15 +28,15 @@ body {
 .publicationsButton, 
 .talksButton, 
 .visualizationsButton {
-	opacity: 0%;								/* Sets the opacity to zero so that it can fade in through jQuery. */
-	display: inline-block;						/* Makes the buttons appear horizontally. */
+	opacity: 0%;								              /* Sets the opacity to zero so that it can fade in through jQuery. */
+	display: inline-block;						        /* Makes the buttons appear horizontally. */
 	background-color: rgba(0, 0, 0, 0.5);	  /* Creates the faded background for the button. */
-	height: 110px;								/* Hardcodes the height of the button. */
-	width: 250px;								/* Hardcodes the width of the button. */
-	font-size: 30px;							/* Sets the font of the text. */
-	margin: 10px;								/* Pads the buttons. */
-	transition: 0.3s;							/* Adds a small animation when the button is hovered over. */
-	cursor: pointer;							/* Makes the cursor show that the button is clickable. */
+	height: 110px;								            /* Hardcodes the height of the button. */
+	width: 250px;								              /* Hardcodes the width of the button. */
+	font-size: 30px;							            /* Sets the font of the text. */
+	margin: 10px;								              /* Pads the buttons. */
+	transition: 0.3s;							            /* Adds a small animation when the button is hovered over. */
+	cursor: pointer;							            /* Makes the cursor show that the button is clickable. */
 }
 
 /* Adds the property for fading the buttons to a different color. */
@@ -49,5 +49,4 @@ body {
 }
 
 /* Author: Eric Nieters - niete018@d.umn.edu */
-
 /* Menu resource from: https://www.w3schools.com/howto/howto_js_sidenav.asp */
