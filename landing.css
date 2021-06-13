@@ -53,4 +53,9 @@ hr {
 	padding: 20px;				/* Creates small padding for the text. */
 }
 
+.footer {
+	text-align: center;
+	font-size: 22px;
+}
+
 /* Author: Eric Nieters - niete018@d.umn.edu */
