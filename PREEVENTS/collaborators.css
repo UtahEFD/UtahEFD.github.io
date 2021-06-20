@@ -26,24 +26,38 @@ body {
 	height: 250px;				/* Sets the max height for the header photo. */
 }
 
-/* Formats the buttons for the navigation menu. */
+/* Formats the buttons for the menu. */
 .fa-chevron-circle-down {
-	font-size: 55px;                    	/* Sizes the navigation button. */
-	cursor: pointer;                    	/* Indicates to the user that the navigation button is clickable. */
-	color: white;                     	  /* Makes the navigation button/text white. */
-	text-shadow: 2px 2px 10px #000;    	  /* Adds shadow to the navigation button for better contrast. */
-	position: absolute;                 	/* Keeps the navigation button from shifting the text in the center. */
-	padding: 15px;							/* Pads the left of the navigation button to make it look cleaner. */
+	font-size: 55px;                    /* Sizes the navigation button. */
+	cursor: pointer;                    /* Indicates to the user that the navigation button is clickable. */
+	color: white;                     /* Makes the navigation button/text white. */
+	text-shadow: 2px 2px 10px #000;   /* Adds shadow to the navigation button for better contrast. */
+	position: absolute;                 /* Keeps the navigation button from shifting the text in the center. */
+	padding: 15px;						/* Pads the left of the navigation button to make it look cleaner. */
 }
 
+/* Shifts the home button to the right. */
 .homeButton .fa-home {
+	margin-left: 70px;
+}
+
+/* Formats the menu and home button. */
+.homeButton .fa-home,
+.menuButton .fa-chevron-circle-down {
 	font-size: 55px;                    	/* Sizes the home button. */
 	cursor: pointer;                    	/* Indicates to the user that the home button is clickable. */
-	color: white;                     	  /* Makes the home button/text white. */
+	color: rgb(228, 228, 228);            /* Makes the home button/text white. */
 	text-shadow: 2px 2px 10px #000;       /* Adds shadow to the home button for better contrast. */
 	position: absolute;                 	/* Keeps the home button from shifting the text in the center. */
 	padding: 15px;							/* Pads the left of the home button to make it look cleaner. */
-	margin-left: 70px;						/* Spaces the home button from the left of the webpage. */
+	transition: 0.3s;						/* Give the animation 0.3s when it's hovered over. */
+}
+
+/* Gives the menu and home buttons animation. */
+.homeButton .fa-home:hover,
+.menuButton .fa-chevron-circle-down:hover {
+	color: white;						  /* Makes the icon brighter when the mouse is hovered over it. */
+	text-shadow: 2px 2px 20px #000;		  /* Makes the shadow a little larger. */
 }
 
 /* Formats the navigation button and drawer. */
@@ -59,6 +73,23 @@ body {
 	transition: 0.5s;             				/* Turns the transition for the animation into half a second. */
 	padding-top: 60px;            				/* Pads the buttons on the top of the navigation bar. */
 	text-align: center;           				/* Aligns all of the buttons towards the center of the screen. */
+}
+
+/* Formats the "close button" when the menu is open. */
+.menu .closebtn {
+	padding-top: 30px;					/* Pads the top of the close button to make it look cleaner. */
+	position: absolute;         		/* Positions the close button for the navigation menu. */
+	top: 0;                     		/* Makes the close button positioned directly at the top. */
+	right: 25px;                		/* Makes the close button positioned 25px from the right. */
+	font-size: 36px;            		/* Changes the size of the close button. */  
+	cursor: pointer;					/* Indicates that the close button is clickable. */
+	color: rgba(153, 153, 153);  /* Makes the button white for better constrast. */
+	transition: 0.3s;					/* Give the animation 0.3s when it's hovered over. */
+}
+
+/* Gives the menu animation. */
+.menu .closebtn:hover {
+	color: white;				  /* Makes the icon brighter when the mouse is hovered over it. */
 }
 
 /* Formats the buttons in the menu. */
@@ -88,17 +119,6 @@ body {
 .visualizationButton:hover {
 	color: #383838;           	/* Turns the text black when the cursor hovers over it. */
 	background-color: white;	/* Changes the background color of the button when hovered. */
-}
-
-/* Formats the "close button" when the menu is open. */
-.menu .closebtn {
-	padding-top: 30px;			/* Pads the top of the close button to make it look cleaner. */
-	position: absolute;         /* Positions the close button for the navigation menu. */
-	top: 0;                     /* Makes the close button positioned directly at the top. */
-	right: 25px;                /* Makes the close button positioned 25px from the right. */
-	font-size: 36px;            /* Changes the size of the close button. */  
-	cursor: pointer;			/* Indicates that the close button is clickable. */
-	color: white;			  /* Makes the button white for better constrast. */
 }
 
 /* Formats the text in the center of the webpage. */

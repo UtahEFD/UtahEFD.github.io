@@ -25,7 +25,6 @@
 
     <!--Set the favicon.-->
     <link rel="icon", href="https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/NSF_logo.png?raw=true">
-
   </head>
 
   <!--Creates the sidebar menu.-->
@@ -58,8 +57,10 @@
     </button>
   </div>
   
-  <!--Assigns the button with the openMenu function.-->
-  <i class="fas fa-chevron-circle-down fa-rotate-270", onclick="openMenu()"></i>
+  <!--Creates/Assigns the button with the openMenu function.-->
+  <div class="menuButton", onclick="openMenu()">
+    <i class="fas fa-chevron-circle-down fa-rotate-270"></i>
+  </div>
 
   <!--Assigns the button with the goHome function.-->
   <div class="homeButton", onclick="location.href='home.html';">
@@ -76,10 +77,10 @@
         <body>
             <!--Creates a class to edit all the text within one class.-->
             <div class="text">
-                <h1 id="titleHeading" style="font-size: 7vh; text-align: center;">Abstract</h1>
+                <h1 id="titleHeading" style="font-size: 5vh; text-align: center;">Abstract</h1>
 
                 <!--Adds the image. Link may be changed so that it's hosted from Github.-->
-                <figure id="abstractImage">
+                <figure id="abstractImage" style="padding-top: 15px;">
                     <img title="FireVortexUSDAFireLab", 
                     src="https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/FireVortexUSDAFireLab.jpg?raw=true", 
                     width="350" height="450">

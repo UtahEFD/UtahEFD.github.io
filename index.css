@@ -22,7 +22,6 @@ hr {
 	padding: 30px;                                  /* Pads all directions for better formatting. */
 	padding-top: 5px;                               /* Adds additional padding towards the top to prevent the navigation button from overflow. */
     background-color: white;					  /* Sets the background of the container to white. */
-	
 }
 
 /* Formats the container for each of the website referrals. */
@@ -32,6 +31,7 @@ hr {
 .lemsv2 {
   	text-align: center;			/* Prevents the text from skewing to the left when overflow occurs. */
 	padding: 20px;				/* Sets padding on the containers for nicer formatting between them. */
+	hyphens: auto;
 }
 
 /* Formats the images for each of the website referrals. */
@@ -41,10 +41,14 @@ hr {
 .lemsv2 #image {
 	float: left;			/* Floats the image to the left of the webpage. */
 	padding-top: 30px;		/* Creates additional padding for the top of the image. */
-	padding-right: 10px;	/* Adds slight padding against the text. */
-	height: 237px;
-	width: 405px;
-	margin-left: auto;
+	padding: 10px;	/* Adds slight padding against the text. */
+	align-self: center;
+}
+
+.container .lemsv2 img {
+	max-height: 237px;
+	max-width: 405px;
+	opacity: 50%;
 }
 
 /* Formats the text for each of the website referrals. */
@@ -55,6 +59,7 @@ hr {
 	text-align: center;			/* Aligns everything in the center when overflow occurs. */
 	vertical-align: top;		/* Sets the text to the top of the div/container. */
 	padding: 10px;				/* Creates small padding for the text. */
+	hyphens: auto;
 }
 
 .footer {
