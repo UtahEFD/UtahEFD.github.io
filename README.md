@@ -11,4 +11,4 @@ Main Utah EDF Page: [Utah EFD Pages](https://utahefd.github.io/)
 * A template webpage will be available soon, which will provide some "fill-in-the-blank" lines that you may use to include more pages. However, a word of caution with creating more websites: The menu will need to handle overflow of buttons. There are currently five buttons in the menu, and adding more may lead to complications on smaller devices.
 
 More documentation may be added or removed later.
-For questions, please email me [(Eric Nieters)](mailto:niete018.d.umn.edu) here: niete018.d.umn.edu.
+For questions, please email me (Eric Nieters) here: niete018.d.umn.edu.
