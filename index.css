@@ -48,7 +48,7 @@ hr {
 .container .lemsv2 img {
 	max-height: 237px;
 	max-width: 405px;
-	opacity: 50%;
+	/*opacity: 50%;*/
 }
 
 /* Formats the text for each of the website referrals. */
