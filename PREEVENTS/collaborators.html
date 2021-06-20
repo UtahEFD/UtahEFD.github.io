@@ -13,8 +13,11 @@
   <!--The link below imports the icons used for the menu bar and the home button.-->
   <script src="https://kit.fontawesome.com/32942563be.js" crossorigin="anonymous"></script>
 
-  <!--The two links below imports the jQuery.-->
+  <!--The link below imports jQuery.-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!--The link below imports Bootstrap.-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <!--Imports the jQuery script for this page.-->
   <script src="collaborators-script.js"></script>
@@ -28,26 +31,44 @@
   </head>
 
   <!--Creates the sidebar menu.-->
-  <div id="mySidenav" class="sidenav">
+  <div id="menuBar" class="menu">
 
-    <!--Adds the functionality to close the menu when 'x' is pressed.-->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+    <!--Creates/Assigns the button with the closeMenu function.-->
+    <div class="closebtn" onclick="closeMenu()">
+        <i class="fas fa-times"></i>
+    </div>
 
-    <!--Adds the buttons with their href to the menu.-->
-    <a href="abstract.html">Abstract</a>
-    <a href="collaborators.html">Collaborators</a>
-    <a href="publications.html">Publications</a>
-    <a href="#">Talks</a>
-    <a href="#">Visualizations</a>
+    <!--Creates/Assigns the buttons in the menu with their proper hyperlink references.-->
+    <button class="abstractButton" onclick="location.href='abstract.html';" style="margin-top: 30px;" >
+        Abstract
+    </button>
+
+    <button class="collaboratorsButton" onclick="location.href='collaborators.html';">
+        Collaborators
+    </button>
+
+    <button class="publicationsButton" onclick="location.href='publications.html';">
+        Publications
+    </button>
+
+    <button class="talksButton" onclick="location.href='';">
+        Talks
+    </button>
+
+    <button class="visualizationButton" onclick="location.href='';">
+        Visualizations
+    </button>
   </div>
 
-  <!--Assigns the button with the openMenu function.-->
+  <!--Creates/Assigns the button with the openMenu function.-->
   <i class="fas fa-chevron-circle-down fa-rotate-270", onclick="openMenu()"></i>
 
-  <!--Assigns the button with the goHome function.-->
+  <!--Creates/Assigns the button with the goHome function.-->
   <div class="homeButton", onclick="location.href='home.html';">
     <i class="fas fa-home"></i>
   </div>
+
+  
 
   <!--Creates the header image at the top of the screen.-->
   <div class="headerImage">
