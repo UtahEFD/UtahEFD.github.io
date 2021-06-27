@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-
-    <!--Adds the style sheet to the .html file.-->
-    <link rel="stylesheet" href="index.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--The two links below allow Google Fonts to be added to the website.-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
+    <!--Imports all the Bootstrap/jQuery resources.-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <head>
         <!--Set the name of the tab.-->
@@ -18,119 +20,106 @@
         <link rel="icon", href="https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/NSF_logo.png?raw=true">
     </head>
 
-    <!--Creates the container for holding the main text of the website.-->
-    <div class="container">
-        <!--Creates the title for the landing page of the research.-->
-        <div class="header">
-            <h1 style="text-align: center; font-size: 7vh; margin-left: 0;">Utah Environmental Fluid Dynamics</h1>
-        </div>
+    <!--Creates the background color of the webpage and the font.-->
+    <body style="background-color: darkgray; font-family: 'Varela Round', sans-serif;">
+        <!--Padding top: 3px. Margins (all four sides): 3px. Background of container: White.-->
+        <div class="container p-3 mx-auto my-3 bg-white">
+            <h1 class="h1 text-center font-weight-bolder py-4">Utah Environmental Fluid Dynamics</p>
 
-        <hr style="width: 75%;">
+            <hr style="height: 2px; color:black; width: 75%; border-width: 2px;">
 
-        <!--Creates the LEMSv2 section of the landing page.-->
-        <div class="lemsv2">
-            <!--Creates the image for the landing page.-->
-            <span id="image">
+            <!--Creates the LEMSv2 section.-->
+            <div class="lemsv2 p-3">
+                <!--Creates the image for the LEMSv2 section.-->
                 <a href="https://github.com/UtahEFD/LEMSv2" target="_blank">
-                    <img src="https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/LEMSv2.png?raw=true">
+                    <img src="https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/LEMSv2.png?raw=true" class="img-fluid float-left p-4 mx-auto" 
+                    alt="LEMSv2" height="261px" width="446px">
                 </a>
-            </span>
-            
-            <!--Creates the text for the landing page.-->
-            <div id="text">
-                <strong>LEMSv2 - Local Energy-Budget Measurement Stations</strong>
-
-                <p style="font-size: smaller;">
-                    LEMS are solar powered, low-cost Energy-budget Measurement Stations, which have been designed and assembled at the University of Utah EFD lab. <br><br>
                 
-                    <a href="https://github.com/UtahEFD/LEMSv2" target="_blank"><u>Visit the LEMSv2 GitHub repository.</u></a>
-                </p>
+                <!--Creates the text for the LEMSv2 section.-->
+                <div id="text">
+                    <p class="font-weight-bold" style="font-size: 4.5vh;"">LEMSv2 - Local Energy-Budget Measurement Stations</p>
+
+                    <p class="font-weight-light" style="font-size: 3.5vh;">LEMS are solar powered, low-cost Energy-budget Measurement Stations, which have been designed and assembled at the University of Utah EFD lab.</p> <br>
+                    
+                    <a href="https://github.com/UtahEFD/LEMSv2" target="_blank" style="font-size: 3.5vh"><u>Visit the LEMSv2 GitHub repository.</u></a>
+                </div>                
             </div>
-        </div>
 
-        <hr>
+            <br>
+            <hr style="height: 2px; color:black; width: 75%; border-width: 2px;">
 
-        <!--Creates the PREEVENTS section of the landing page.-->
-        <div class="preevents">
-            <!--Creates the image for the landing page.-->
-            <span id="image">
+            <!--Creates the PREEVENTS section.-->
+            <div class="preevents p-3">
+                <!--Creates the image for the PREEVENTS section.-->
                 <a href="https://utahefd.github.io/PREEVENTS/home.html" target="_blank">
-                    <img src="https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/PREEVENTS.png?raw=true" height="237px" width="405px">
+                    <img src="https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/PREEVENTS.png?raw=true" class="img-fluid float-left p-4 mx-auto" 
+                    alt="PREEVENTS" height="261px" width="446px">
                 </a>
-            </span>
-            
-            <!--Creates the text for the landing page.-->
-            <div id="text">
-                <strong>PREEVENTS</strong>
+                
+                <!--Creates the text for the PREEVENTS section.-->
+                <div id="text">
+                    <p class="font-weight-bold" style="font-size: 4.5vh;"">PREEVENTS</p>
 
-                <p style="font-size: smaller;">
-                    A fast-response wildland fire modeling framework for prediction and risk assessment. <br><br>
-
-                    <a href="https://utahefd.github.io/PREEVENTS/home.html" target="_blank"><u>Visit the PREEVENTS website.</u></a>
-                </p>
+                    <p class="font-weight-light" style="font-size: 3.5vh;">A fast-response wildland fire modeling framework for prediction and risk assessment.</p> <br>
+                    
+                    <a href="https://github.com/UtahEFD/LEMSv2" target="_blank" style="font-size: 3.5vh"><u>Visit the PREEVENTS website.</u></a><br>
+                </div>
             </div>
-        </div>
 
-        <hr>
+            <br>
+            <hr style="height: 2px; color:black; width: 75%; border-width: 2px;">
 
-        <!--Creates the QES Winds section of the landing page.-->
-        <div class="qesWinds">
-            <!--Creates the image for the landing page.-->
-            <span id="image">
+            <!--Creates the QESWinds section.-->
+            <div class="qesWinds p-3">
+                <!--Creates the image for the QESWinds section.-->
                 <a href="https://github.com/UtahEFD/QES-Winds-Public" target="_blank">
-                    <img src="https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/QESWinds.png?raw=true" height="237px" width="405px">
+                    <img src="https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/QESWinds.png?raw=true" class="img-fluid float-left p-4 mx-auto" 
+                    alt="QESWinds" height="261px" width="446px">
                 </a>
-            </span>
-            
-            <!--Creates the text for the landing page.-->
-            <div id="text">
-                <strong>QESWinds</strong>
+                
+                <!--Creates the text for the QESWinds section.-->
+                <div id="text">
+                    <p class="font-weight-bold" style="font-size: 4.5vh;"">QESWinds</p>
 
-                <p style="font-size: smaller; text-align: center;">
-                    QES-Winds is a fast response 3D diagnostic urban wind model written in C++ and uses NVIDIA's CUDA framework to accelerate a 
-                    mass-conserving wind-field solver. QES-Winds uses a variational analysis technique to ensure the conservation of mass rather than slower 
-                    yet more physics-based solvers that include conservation of momentum. QES-Winds minimizes the difference between an initial wind field 
-                    that is specified using empirical parameterizations and thefinal wind field. This method requires the solution of a Poisson equation 
-                    for Lagrange multipliers. The Poisson equation is solved using the Successive Over-Relaxation (SOR) method (an iterative solver), which 
-                    is a variant of the Gauss-Seidel method with more rapid convergence. QES-Winds utilizes the concept of dynamic parallelism in NVIDIAs 
-                    parallel computing-based Graphics Processing Unit (or GPU) API, CUDA, to substantially accelerate wind simulations. <br><br>
-
-                    <a href="https://github.com/UtahEFD/QES-Winds-Public" target="_blank"><u>Visit the QES Winds GitHub repository.</u></a>
-                </p>
+                    <p class="font-weight-light" style="font-size: 3.5vh;">QES-Winds is a fast response 3D diagnostic urban wind model written in C++ and uses NVIDIA's 
+                        CUDA framework to accelerate a mass-conserving wind-field solver. </p> <br>
+                    
+                    <a href="https://github.com/UtahEFD/QES-Winds-Public" target="_blank" style="font-size: 3.5vh"><u>Visit the QESWinds Github repository.</u></a><br>
+                </div>
             </div>
-        </div>
 
-        <hr>
+            <br>
+            <hr style="height: 2px; color:black; width: 75%; border-width: 2px;">
 
-        <!--Creates the UtahLSM section of the landing page.-->
-        <div class="utahLSM">
-            <!--Creates the image for the landing page.-->
-            <span id="image">
+            <!--Creates the UtahLSM section.-->
+            <div class="utahLSM p-3">
+                <!--Creates the image for the UtahLSM section.-->
                 <a href="https://github.com/UtahEFD/UtahLSM" target="_blank">
-                    <img src="https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/UtahLSM.png?raw=true" height="237px" width="405px">
+                    <img src="https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/UtahLSM.png?raw=true" class="img-fluid float-left p-4 mx-auto" 
+                    alt="UtahLSM" height="261px" width="446px">
                 </a>
-            </span>
-            
-            <!--Creates the text for the landing page.-->
-            <div id="text">
-                <strong>UtahLSM - University of Utah Land Surface Model</strong>
+                
+                <!--Creates the text for the UtahLSM section.-->
+                <div id="text">
+                    <p class="font-weight-bold" style="font-size: 4.5vh;"">UtahLSM - University of Utah Land Surface Model</p>
 
-                <p style="font-size: smaller;">
-                    UtahLSM is a lightweight, fast-response land-surface model suitable for use in large-eddy simulation (LES) codes. <br><br>
-
-                    <a href="https://github.com/UtahEFD/UtahLSM" target="_blank"><u>Visit the UtahLSM GitHub repository.</u></a>
-                </p>
+                    <p class="font-weight-light" style="font-size: 3.5vh;">UtahLSM is a lightweight, fast-response land-surface model suitable for use in large-eddy simulation (LES) codes.</p> <br>
+                    
+                    <a href="https://github.com/UtahEFD/LEMSv2" target="_blank" style="font-size: 3.5vh"><u>Visit the UtahLSM Github repository.</u></a><br>
+                </div>
             </div>
+
+            <br>
+            <hr style="height: 2px; color:black; width: 75%; border-width: 2px;">
+
+            <!--Creates the footer of the page.-->
+
+            <div class="footer" style="text-align: center; font-size: 3vh;">
+                <a href="https://github.com/UtahEFD" target="_blank"><p><em>Visit the UtahEFD GitHub here.</em></p></a>
+            </div>
+
         </div>
-
-        <hr>
-
-        <div class="footer">
-            <a href="https://github.com/UtahEFD" target="_blank"><p><em>Visit the UtahEFD GitHub here.</em></p></a>
-        </div>
-
-    </div>
-
+    </body>
 </html>
-
 <!--Author: Eric Nieters - niete018@d.umn.edu-->
