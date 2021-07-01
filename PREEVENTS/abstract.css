@@ -3,6 +3,10 @@ body {
 	background-color: #303030;
 }
 
+p {
+	font-size: 1.5rem;
+}
+
 /* Formats the container that contains all of the elements on the screen. */
 .container {
 	color: #FFF;                            /* Makes the text white. */
@@ -126,7 +130,7 @@ body {
 .text {
 	background: rgba(0, 0, 0, 0.4);         /* Creates a faded background behind the text for readability. */
 	padding: 30px;                            /* Pads the text within the container. */
-	font-size: 25px;                          /* Changes the font's size. */
+	/*font-size: 25px;                          /* Changes the font's size. */
 	overflow-wrap: break-word;                /* Prevents overflow. */
 	width: 100%;                              /* Fixes the padding of the background for mobile users. */
 }

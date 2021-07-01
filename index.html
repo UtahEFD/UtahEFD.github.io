@@ -12,6 +12,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!--Styles all the "a" and "p" elements so that they scale with each display.-->
+    <style>
+
+        a, p {
+            font-size: 1.5rem;
+        }
+
+    </style>
+
     <head>
         <!--Set the name of the tab.-->
         <title>Landing</title>
@@ -21,9 +30,9 @@
     </head>
 
     <!--Creates the background color of the webpage and the font.-->
-    <body style="background-color: darkgray; font-family: 'Varela Round', sans-serif;">
+    <body style="background-color: darkgray; font-family: 'Varela Round', sans-serif;" class="px-2">
         <!--Padding top: 3px. Margins (all four sides): 3px. Background of container: White.-->
-        <div class="container p-3 mx-auto my-3 bg-white">
+        <div class="container mx-auto my-3 bg-white">
             <h1 class="h1 text-center font-weight-bolder py-4">Utah Environmental Fluid Dynamics</p>
 
             <hr style="height: 2px; color:black; width: 75%; border-width: 2px;">
@@ -38,11 +47,11 @@
                 
                 <!--Creates the text for the LEMSv2 section.-->
                 <div id="text">
-                    <p class="font-weight-bold" style="font-size: 4.5vh;"">LEMSv2 - Local Energy-Budget Measurement Stations</p>
+                    <h1 class="font-weight-bold">LEMSv2 - Local Energy-Budget Measurement Stations</h1>
 
-                    <p class="font-weight-light" style="font-size: 3.5vh;">LEMS are solar powered, low-cost Energy-budget Measurement Stations, which have been designed and assembled at the University of Utah EFD lab.</p> <br>
+                    <p class="font-weight-light">LEMS are solar powered, low-cost Energy-budget Measurement Stations, which have been designed and assembled at the University of Utah EFD lab.</p>
                     
-                    <a href="https://github.com/UtahEFD/LEMSv2" target="_blank" style="font-size: 3.5vh"><u>Visit the LEMSv2 GitHub repository.</u></a>
+                    <a href="https://github.com/UtahEFD/LEMSv2" target="_blank"><u>Visit the LEMSv2 GitHub repository.</u></a>
                 </div>                
             </div>
 
@@ -59,11 +68,14 @@
                 
                 <!--Creates the text for the PREEVENTS section.-->
                 <div id="text">
-                    <p class="font-weight-bold" style="font-size: 4.5vh;"">PREEVENTS</p>
+                    <h1 class="font-weight-bold">PREEVENTS</h1>
 
-                    <p class="font-weight-light" style="font-size: 3.5vh;">A fast-response wildland fire modeling framework for prediction and risk assessment.</p> <br>
+                    <p class="font-weight-light">A fast-response wildland fire modeling framework for prediction and risk assessment.</p>
+
+                    <!--Additional break added here so that the hr element doesn't go behind the image.-->
+                    <br>
                     
-                    <a href="https://github.com/UtahEFD/LEMSv2" target="_blank" style="font-size: 3.5vh"><u>Visit the PREEVENTS website.</u></a><br>
+                    <a href="https://github.com/UtahEFD/LEMSv2" target="_blank"><u>Visit the PREEVENTS website.</u></a><br>
                 </div>
             </div>
 
@@ -80,12 +92,12 @@
                 
                 <!--Creates the text for the QESWinds section.-->
                 <div id="text">
-                    <p class="font-weight-bold" style="font-size: 4.5vh;"">QESWinds</p>
+                    <h1 class="font-weight-bold">QESWinds</h1>
 
-                    <p class="font-weight-light" style="font-size: 3.5vh;">QES-Winds is a fast response 3D diagnostic urban wind model written in C++ and uses NVIDIA's 
+                    <p class="font-weight-light">QES-Winds is a fast response 3D diagnostic urban wind model written in C++ and uses NVIDIA's 
                         CUDA framework to accelerate a mass-conserving wind-field solver. </p> <br>
                     
-                    <a href="https://github.com/UtahEFD/QES-Winds-Public" target="_blank" style="font-size: 3.5vh"><u>Visit the QESWinds Github repository.</u></a><br>
+                    <a href="https://github.com/UtahEFD/QES-Winds-Public" target="_blank"><u>Visit the QESWinds Github repository.</u></a>
                 </div>
             </div>
 
@@ -102,11 +114,11 @@
                 
                 <!--Creates the text for the UtahLSM section.-->
                 <div id="text">
-                    <p class="font-weight-bold" style="font-size: 4.5vh;"">UtahLSM - University of Utah Land Surface Model</p>
+                    <h1 class="font-weight-bold">UtahLSM - University of Utah Land Surface Model</h1>
 
-                    <p class="font-weight-light" style="font-size: 3.5vh;">UtahLSM is a lightweight, fast-response land-surface model suitable for use in large-eddy simulation (LES) codes.</p> <br>
+                    <p class="font-weight-light">UtahLSM is a lightweight, fast-response land-surface model suitable for use in large-eddy simulation (LES) codes.</p>
                     
-                    <a href="https://github.com/UtahEFD/LEMSv2" target="_blank" style="font-size: 3.5vh"><u>Visit the UtahLSM Github repository.</u></a><br>
+                    <a href="https://github.com/UtahEFD/LEMSv2" target="_blank"><u>Visit the UtahLSM Github repository.</u></a><br>
                 </div>
             </div>
 
@@ -115,7 +127,7 @@
 
             <!--Creates the footer of the page.-->
 
-            <div class="footer" style="text-align: center; font-size: 3vh;">
+            <div class="footer" style="text-align: center;">
                 <a href="https://github.com/UtahEFD" target="_blank"><p><em>Visit the UtahEFD GitHub here.</em></p></a>
             </div>
 
