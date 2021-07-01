@@ -145,7 +145,7 @@ p {
 	text-align: left;		/* Aligns the text to the left by default. */
 }
 
-/* Formats the header image so that it fits on mobile devices. */
+/* Formats the image so that it fits on mobile devices. */
 .container .text #homeImage {
 	margin: auto;           /* Scales the image in the center of the container for narrow displays. */
 	overflow: hidden;       /* Prevents scrolling if the image is too large. */

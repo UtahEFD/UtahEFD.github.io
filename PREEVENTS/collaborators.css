@@ -3,6 +3,16 @@ body {
 	background-color: #303030;
 }
 
+/* Sets the font size for all the "p" elements used in the html file. */
+p {
+	font-size: 1.5rem;
+}
+
+/* Sets the font size for the title heading used in the html file. */
+.container .text #titleHeading {
+	font-size: 3rem;
+}
+
 /* Formats the container that contains all of the elements on the screen. */
 .container {
 	color: #FFF;                            /* Makes the text white. */
@@ -125,12 +135,11 @@ body {
 .text {
 	background: rgba(0, 0, 0, 0.4);         /* Creates a faded background behind the text for readability. */
 	padding: 30px;                            /* Pads the text within the container. */
-	font-size: 25px;                          /* Changes the font's size. */
 	overflow-wrap: break-word;                /* Prevents overflow. */
 	width: 100%;                              /* Fixes the padding of the background for mobile users. */
 }
 
-/* Formats the image so that it fits on mobile devices. */
+/* Formats the header image so that it fits on mobile devices. */
 .container .text #abstractImage {
 	margin: auto;           /* Scales the image in the center of the container for narrow displays. */
 	overflow: hidden;       /* Prevents scrolling if the image is too large. */
