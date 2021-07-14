@@ -1,32 +1,10 @@
-<!----------------------------
-THIS IS A TEMPLATE FILE!
-
-You may copy and paste this template file if you wish to add another page to the website.
-
-Things to note:
-- Many elements are already mobile optimized. All you need to do is add your own elements
-to the html file.
-
-- You will need to add a button to the menu if you would like the webpage to be navigated
-from there.
-
-- Bootstrap is not installed for the PREEVENTS pages.
-
-- You may need to update jQuery if you need new features.
-
-- The .js file for the template is optional, but it will make the animations flow with the
-rest of the website.
-
-Remember to change lines 29 and 42!
------------------------------>
-
 <!DOCTYPE html>
 <html lang="en">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
 
   <!--Adds the style sheet to the .html file.-->
-  <link rel="stylesheet" href="template.css">
+  <link rel="stylesheet" href="visualizations.css">
 
   <!--The two links below allow Google Fonts to be added to the website.-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -39,11 +17,11 @@ Remember to change lines 29 and 42!
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <!--Imports the jQuery script for this page.-->
-  <script src="template-script.js"></script>
+  <script src="visualizations-script.js"></script>
 
   <head>
     <!--Set the name of the tab.-->
-    <title>Template</title>
+    <title>Visualizations</title>
 
     <!--Set the favicon.-->
     <link rel="icon", href="https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/NSF_logo.png?raw=true">
@@ -59,7 +37,7 @@ Remember to change lines 29 and 42!
 
     <!--Creates/Assigns the buttons in the menu with their proper hyperlink references.-->
     <button class="abstractButton" onclick="location.href='abstract.html';" style="margin-top: 30px;" >
-      Abstract
+        Abstract
     </button>
 
     <button class="collaboratorsButton" onclick="location.href='collaborators.html';">
@@ -101,11 +79,24 @@ Remember to change lines 29 and 42!
       <!--Creates a class to edit all the text within one class.-->
       <div class="text">
         <body>
-          <h1 id="titleHeading" style="text-align: center;">Template</h1>
+          <h1 id="titleHeading" style="text-align: center; font-size: 2.5rem;">Visualizations</h1>
 
           <p style="text-align: center;">
-            This is a template file. You may read some more information about it at the top of the .html file.
+            This page includes videos that demonstrate experiments that have been conducted through the research.
           </p>
+
+          <!--Creates a divider line between the header and the publications.-->
+          <hr style="height: 2px; color:rgb(255, 255, 255); width: 75%; border: none; background-color: white;"><br>
+
+          <p>
+            The video below demonstrates (get information later, this is a placeholder).
+          </p>
+
+          <!--Embeds the video of the RxCADRE 7d WRFx experiment.-->
+          <div class="iframeContainer">
+            <iframe width="673" height="507" src="https://www.youtube.com/embed/MGqZ3K-lg9U" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
 
         </body>
       </div>
