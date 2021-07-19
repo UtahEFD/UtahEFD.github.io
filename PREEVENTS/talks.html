@@ -1,25 +1,3 @@
-<!----------------------------
-THIS IS A TEMPLATE FILE!
-
-You may copy and paste this template file if you wish to add another page to the website.
-
-Things to note:
-- Many elements are already mobile optimized. All you need to do is add your own elements
-to the html file.
-
-- You will need to add a button to the menu if you would like the webpage to be navigated
-from there.
-
-- Bootstrap is not installed for the PREEVENTS pages.
-
-- You may need to update jQuery if you need new features.
-
-- The .js file for the template is optional, but it will make the animations flow with the
-rest of the website.
-
-Remember to change lines 29 and 42!
------------------------------>
-
 <!DOCTYPE html>
 <html lang="en">
   <meta charset="UTF-8">
@@ -101,10 +79,38 @@ Remember to change lines 29 and 42!
       <!--Creates a class to edit all the text within one class.-->
       <div class="text">
         <body>
-          <h1 id="titleHeading" style="text-align: center;">Template</h1>
+          <h1 id="titleHeading" style="text-align: center;">Talks</h1>
 
           <p style="text-align: center;">
-            This is a template file. You may read some more information about it at the top of the .html file.
+            A series of talks that discuss the PREEVENTS research.
+          </p>
+
+          <!--Creates a divider line between the header and the talks.-->
+          <hr style="height: 2px; color:rgb(255, 255, 255); width: 75%; border: none; background-color: white;"><br>
+
+          <p style="text-align: center; font-size: 2rem;">
+            (QES Winds) Presentation for the 24th GMU Conference on Atmospheric Transport and Dispersion Modeling by Behnam Bozorgmehr
+          </p>
+
+          <div class="iframeContainer">
+            <iframe width="811" height="507" src="https://www.youtube.com/embed/uVgjIFvLY7M" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <p style="text-align: center; font-size: 1.5rem;">
+            Modeling wildfires, energy production, and air pollution propagation in cities require high-resolution wind fields. QES-Winds is a 
+            fast-response 3D diagnostic wind model written in C++, based on the well-used FORTRAN code, QUIC-URB (Quick Urban and Industrial 
+            Complex-Urban module). Incorporating the concept of dynamic parallelism in CUDA, QES-Winds significantly accelerates the computation 
+            of wind fields. QES-Winds’ GPU-based solver is ~128 times faster than the equivalent CPU (Computing Processing Unit, not 
+            parallelized) solver for a domain using 144 million cells. <br><br>
+            
+            As a result, QES-Winds can be used for prediction (model run-times 
+            should be near or faster than real-time) or design optimization (thousands of simulations must be performed in a short period of 
+            time) for larger domains. To improve wind modeling in urban areas and in mountainous regions, we have added a higher-order 
+            geometrical representation of both buildings (most important in urban environments) and terrain (important for wind energy and 
+            wildfires). We use the cut-cell method, which provides the capability of having cells partially cut by solid surfaces. The cut-cell 
+            method is able to capture more building and terrain geometry details compared with standard QUIC-URB’s “block buildings” or 
+            stair-step approach.
           </p>
 
         </body>

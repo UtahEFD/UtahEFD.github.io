@@ -151,4 +151,22 @@ p {
 	overflow: hidden;       /* Prevents scrolling if the image is too large. */
 }
 
+/* Formats the YouTube videos. */
+.container .text .iframeContainer {
+	position: relative;			/* Keeps the video in the container. */
+	max-width: 80%;				/* Makes the frame of the YouTube video smaller. */
+	padding-bottom: 56.25%; 	/* Makes the video appear as an even square. */
+	margin-left: auto;			/* Centers the video. */
+	margin-right: auto;			/* Centers the video. */
+}
+
+/* Formats the frame of the video. */
+.iframeContainer iframe {
+	position: absolute;			/* Makes the video appear as an even square. */
+	top: 0;						/* Positions the video nicely in the container. */
+	left: 0;					/* Positions the video nicely in the container. */
+	width: 100%;				/* Prevents the video frame from going out of the container on mobile. */
+	height: 100%;				/* Prevents the video frame from going out of the container on mobile. */
+}
+
 /* Author: Eric Nieters - niete018@d.umn.edu */
