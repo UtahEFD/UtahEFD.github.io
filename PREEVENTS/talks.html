@@ -88,30 +88,84 @@
           <!--Creates a divider line between the header and the talks.-->
           <hr style="height: 2px; color:rgb(255, 255, 255); width: 75%; border: none; background-color: white;"><br>
 
-          <p style="text-align: center; font-size: 2rem;">
-            (QES Winds) Presentation for the 24th GMU Conference on Atmospheric Transport and Dispersion Modeling by Behnam Bozorgmehr
-          </p>
-
-          <div class="iframeContainer">
-            <iframe width="811" height="507" src="https://www.youtube.com/embed/uVgjIFvLY7M" title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!--Talk #1-->
+          <div id="talk1">
+            <p style="text-align: center; font-size: 2rem;">
+              (QES Winds) Presentation for the 24th GMU Conference on Atmospheric Transport and Dispersion Modeling by Behnam Bozorgmehr
+            </p>
+  
+            <div class="iframeContainer">
+              <iframe width="811" height="507" src="https://www.youtube.com/embed/uVgjIFvLY7M" title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+  
+            <p style="text-align: center; font-size: 1.2rem;">
+              Modeling wildfires, energy production, and air pollution propagation in cities require high-resolution wind fields. QES-Winds is a 
+              fast-response 3D diagnostic wind model written in C++, based on the well-used FORTRAN code, QUIC-URB (Quick Urban and Industrial 
+              Complex-Urban module). Incorporating the concept of dynamic parallelism in CUDA, QES-Winds significantly accelerates the computation 
+              of wind fields. QES-Winds’ GPU-based solver is ~128 times faster than the equivalent CPU (Computing Processing Unit, not 
+              parallelized) solver for a domain using 144 million cells. <br><br>
+              
+              As a result, QES-Winds can be used for prediction (model run-times 
+              should be near or faster than real-time) or design optimization (thousands of simulations must be performed in a short period of 
+              time) for larger domains. To improve wind modeling in urban areas and in mountainous regions, we have added a higher-order 
+              geometrical representation of both buildings (most important in urban environments) and terrain (important for wind energy and 
+              wildfires). We use the cut-cell method, which provides the capability of having cells partially cut by solid surfaces. The cut-cell 
+              method is able to capture more building and terrain geometry details compared with standard QUIC-URB’s “block buildings” or 
+              stair-step approach.
+            </p>
           </div>
 
-          <p style="text-align: center; font-size: 1.5rem;">
-            Modeling wildfires, energy production, and air pollution propagation in cities require high-resolution wind fields. QES-Winds is a 
-            fast-response 3D diagnostic wind model written in C++, based on the well-used FORTRAN code, QUIC-URB (Quick Urban and Industrial 
-            Complex-Urban module). Incorporating the concept of dynamic parallelism in CUDA, QES-Winds significantly accelerates the computation 
-            of wind fields. QES-Winds’ GPU-based solver is ~128 times faster than the equivalent CPU (Computing Processing Unit, not 
-            parallelized) solver for a domain using 144 million cells. <br><br>
-            
-            As a result, QES-Winds can be used for prediction (model run-times 
-            should be near or faster than real-time) or design optimization (thousands of simulations must be performed in a short period of 
-            time) for larger domains. To improve wind modeling in urban areas and in mountainous regions, we have added a higher-order 
-            geometrical representation of both buildings (most important in urban environments) and terrain (important for wind energy and 
-            wildfires). We use the cut-cell method, which provides the capability of having cells partially cut by solid surfaces. The cut-cell 
-            method is able to capture more building and terrain geometry details compared with standard QUIC-URB’s “block buildings” or 
-            stair-step approach.
-          </p>
+          <br><hr style="height: 2px; color:rgb(255, 255, 255); width: 75%; border: none; background-color: white;"><br>
+
+          <!--Talk #2-->
+          <div id="talk2">
+            <p style="text-align: center; font-size: 2rem;">
+              (QES Winds) AMS Fire Conference 2021 by Matthew Moody
+            </p>
+  
+            <div class="iframeContainer">
+              <iframe width="901" height="507" src="https://www.youtube.com/embed/M6GNUkyywJs" title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+  
+            <p style="text-align: center; font-size: 1.2rem;">
+              Brief overview of QES-Fire, presented at the 13th AMS Fire Conference, 2021
+            </p>
+          </div>
+
+          <br><hr style="height: 2px; color:rgb(255, 255, 255); width: 75%; border: none; background-color: white;"><br>
+
+          <!--Talk #3-->
+          <div id="talk3">
+            <p style="text-align: center; font-size: 2rem;">
+              "<em>Evaluating Beer's law for leaf area density estimation in homogeneous and heterogeneous canopies</em>" by Halubok, M. and Bailey, B.N.
+            </p>
+
+            <p style="font-size: 1.2rem;">Plant canopy structure plays an important role in shaping energy and mass exchange fluxes, particularly in heterogeneous environments. 
+              Thus, accurately quantifying variability in canopy structure is critical for various environmental models (e.g., wildfire models, ecosystem 
+              models, remote sensing inversion) and for interpreting ecosystem flux measurements. Use of remote-sensing-based platforms along with active 
+              sensing (e.g., LiDAR) has become almost routine for characterizing canopy structure. However, translating this raw data into useful model 
+              inputs, and quantifying associated errors, has remained a challenge. This is largely due to the inability to obtain robust, detailed manual 
+              measurements over large scales for methodological development and validation. <br><br>
+
+              In this work, we present a new method for estimation of 3D leaf area density (LAD) distributions from aerial LiDAR data, applicable to 
+              canopies with sparse through optically-thick vegetation. In order to rigorously evaluate the proposed approach for a wide range of canopy 
+              architectures, scan densities, and grid resolutions, we generated an array of 3D virtual plant canopies in which the exact LAD distributions 
+              were known, and used the algorithm to estimate LAD from simulated or "synthetic" LiDAR scan data for these canopies.<br><br>
+
+              Our results indicated that for homogeneous and isotropic cases, agreement between estimated and reference LAD values improved as the voxel size 
+              increases, which is reflected in the overall decrease of normalized RMSE - from 95-100% at voxel size of 1×1×1 m<sup>3</sup> to 5-14% at 
+              10×10×10 m<sup>3</sup> under scan density of 10 points/m<sup>2</sup> comparable to that of real-life aerial LiDAR instrumentation; mean bias demonstrated 
+              a similar decreasing trend. A two-fold increase in scan density lead to only a slight improvement in LAD estimation in terms of RMSE. In case of heterogeneous 
+              canopies, error in LAD estimates increases as plant spacing increases for large voxel sizes, in which case a clumping correction is also needed. 
+              Overall, the ultimate goal of this research study was to provide some form of quantification of the resulting errors in LAD estimates for a 
+              given combination of factors (e.g., scan density, voxel size, canopy density).</p><br><br>
+
+              <!--Includes the source:-->
+              <a href="https://ui.adsabs.harvard.edu/abs/2019AGUFM.B41K2504H/abstract" target="blank" 
+              style="font-size: 1rem; text-align: center; color: white;"><em>Source: Astrophysics Data System</em></p>
+          </div>
 
         </body>
       </div>
