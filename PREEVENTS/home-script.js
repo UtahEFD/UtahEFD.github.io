@@ -12,7 +12,26 @@ function cycleBackgroundImages() {
   });
 }
 
+// Credit for the dropdown function: https://www.w3schools.com/howto/howto_js_collapsible.asp
+function dropdownMenu() {
+  var coll = document.getElementsByClassName("imageSourcesButton");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+}
+
 $(document).ready(function() {
+  dropdownMenu();
   cycleBackgroundImages();
 
   // Fades the intro text in.
@@ -24,8 +43,9 @@ $(document).ready(function() {
   $(".container, .buttonsRowOne, .abstractButton").delay(2300).animate({opacity: 1}, 200);
   $(".container, .buttonsRowOne, .collaboratorsButton").delay(2500).animate({opacity: 1}, 200);
   $(".container, .buttonsRowOne, .publicationsButton").delay(2700).animate({opacity: 1}, 200);
-  $(".container, .buttonsRowOne, .talksButton").delay(2900).animate({opacity: 1}, 200);
-  $(".container, .buttonsRowOne, .visualizationsButton").delay(3100).animate({opacity: 1}, 200);
+  $(".container, .buttonsRowTwo, .talksButton").delay(2900).animate({opacity: 1}, 200);
+  $(".container, .buttonsRowTwo, .visualizationsButton").delay(3100).animate({opacity: 1}, 200);
+  $(".container, .buttonsRowOne, .imageSourcesButton").delay(3300).animate({opacity: 1}, 200);
 });
 
 // Author: Eric Nieters - niete018@d.umn.edu

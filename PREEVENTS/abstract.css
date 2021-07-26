@@ -154,7 +154,7 @@ p {
 
 /* Removes the color if the link is visited to provide better contrast. */
 a {
-	color: white;		/* Removes the purple color for the href text.
+	color: white;		/* Removes the purple color for the href text. */
 }
 
 /* Author: Eric Nieters - niete018@d.umn.edu */

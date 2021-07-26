@@ -27,7 +27,8 @@ body {
 .collaboratorsButton, 
 .publicationsButton, 
 .talksButton, 
-.visualizationsButton {
+.visualizationsButton,
+.imageSourcesButton {
 	opacity: 0%;								              /* Sets the opacity to zero so that it can fade in through jQuery. */
 	display: inline-block;						        /* Makes the buttons appear horizontally. */
 	background-color: rgba(0, 0, 0, 0.5);	  /* Creates the faded background for the button. */
@@ -39,13 +40,35 @@ body {
 	cursor: pointer;							            /* Makes the cursor show that the button is clickable. */
 }
 
+/* Adds some additional attributes for the "image sources" button. */
+.imageSourcesButton {
+  font-family: 'Playfair Display', serif;       /* Sets the font of the text. */
+  height: 40px;								                  /* Hardcodes the height of the button. */
+	width: 300px;								                  /* Hardcodes the width of the button. */
+  font-size: 1rem;                              /* Sets the font of the button. */
+  color: white;                               /* Sets the font of the button. */
+  border: none;                                 /* Removes the white border around the button. */
+}
+
 /* Adds the property for fading the buttons to a different color. */
 .abstractButton:hover, 
 .collaboratorsButton:hover, 
 .publicationsButton:hover, 
 .talksButton:hover, 
-.visualizationsButton:hover {
+.visualizationsButton:hover,
+.imageSourcesButton:hover {
 	background-color: rgba(0, 0, 0, 0.9);	  /* Darkens the background color when the mouse is hovered over it. */
+}
+
+/* Removes the color if the link is visited to provide better contrast. */
+a {
+	color: white;		/* Removes the purple color for the href text. */
+}
+
+.content {
+  max-height: 0;                            /* Hides the text when the dropdown is not clicked on. */
+  overflow: hidden;                         /* Hides the text when the dropdown is not clicked on. */
+  transition: max-height 0.3s ease-out;     /* Adds the transition effect. */
 }
 
 /* Author: Eric Nieters - niete018@d.umn.edu */
