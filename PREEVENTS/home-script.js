@@ -22,7 +22,6 @@ $(document).ready(function() {
   $(".container, .buttonsRowOne, .publicationsButton").delay(2700).animate({opacity: 1}, 200);
   $(".container, .buttonsRowOne, .talksButton").delay(2900).animate({opacity: 1}, 200);
   $(".container, .buttonsRowOne, .visualizationsButton").delay(3100).animate({opacity: 1}, 200);
-
 });
 
 // Author: Eric Nieters - niete018@d.umn.edu

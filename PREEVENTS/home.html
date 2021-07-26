@@ -14,6 +14,11 @@
   <!--Credit: srobbin (https://github.com/jquery-backstretch/jquery-backstretch)-->
   <script src="./jquery-backstretch-master/src/jquery.backstretch.js"></script>
 
+  <!--The link below imports a jQuery expander plug-in used for collapsing the credit for the images on the site.-->
+  <!--Credit: goodleby (https://github.com/goodleby/expander)-->
+  <script src="./expand-collapse-anything/dist/jquery.expander.min.js"></script>
+  <link rel="stylesheet" href="./expand-collapse-anything/dist/jquery.expander.min.css" />
+
   <!--Imports the jQuery script for this page.-->
   <script src="home-script.js"></script>
 
@@ -66,6 +71,19 @@
         <p>Visualizations</p>
       </div>
 
+    </div>
+  </div>
+
+  <!--Creates the dropdown that collapses the credit for the images.-->
+  <div class="accordion" data-expander="my-accordion">
+    <div class="accordion__head" data-toggle>
+      Images Sources (click to expand)
+    </div>
+    <div class="accordion__body" data-body>
+      University of Minnesota Duluth Campus (Credit: https://www.d.umn.edu)<br>
+      University of Utah Campus (Credit: https://unews.utah.edu)<br>
+      University of Colorado Denver (Credit: https://clas.ucdenver.edu)<br> <!--https://clas.ucdenver.edu/integrative-biology/-->
+      University of California Davis (Credit: https://www.superlativegroup.com) <!--https://www.superlativegroup.com/portfolio_page/superlative-signs-agreement-uc-davis/uc-davis-campus/-->
     </div>
   </div>
 
