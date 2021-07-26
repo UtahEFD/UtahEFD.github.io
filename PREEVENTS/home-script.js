@@ -1,7 +1,10 @@
 function cycleBackgroundImages() {
+  // If you would like to add a new image to the background, simply add the URL of it to the array below.
   $.backstretch([
     "https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/UMDDuluthCampus-Background.jpg?raw=true",
     "https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/UUtahCampus-Background.jpg?raw=true",
+    "https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/UColoradoDenverCampus-Background.jpg?raw=true",
+    "https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/UCaliforniaDavisCampus-Background.jpg?raw=true"
     ], {
       fade: 750,
       duration: 3000
