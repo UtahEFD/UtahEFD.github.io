@@ -169,4 +169,15 @@ p {
 	height: 100%;				/* Prevents the video frame from going out of the container on mobile. */
 }
 
+/* Formats the image credit at the bottom of the page. */
+.imageCredit {
+	text-align: center; 	/* Aligns the image credit at the center of the page. */
+	color: white;		  /* Matches the color with the rest of the page. */
+}
+
+/* Removes the color if the link is visited to provide better contrast. */
+a {
+	color: white;		/* Removes the purple color for the href text. */
+}
+
 /* Author: Eric Nieters - niete018@d.umn.edu */

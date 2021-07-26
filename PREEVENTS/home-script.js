@@ -4,7 +4,8 @@ function cycleBackgroundImages() {
     "https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/UMDDuluthCampus-Background.jpg?raw=true",
     "https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/UUtahCampus-Background.jpg?raw=true",
     "https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/UColoradoDenverCampus-Background.jpg?raw=true",
-    "https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/UCaliforniaDavisCampus-Background.jpg?raw=true"
+    "https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/UCaliforniaDavisCampus-Background.jpg?raw=true",
+    "https://github.com/UtahEFD/UtahEFD.github.io/blob/main/PREEVENTS/Images/UOklahomaCampus-Background.jpg?raw=true"
     ], {
       fade: 750,
       duration: 3000
